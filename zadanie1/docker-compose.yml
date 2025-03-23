@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  zadanie1:
+    container_name: zadanie1
+    image: kreciszj/zadanie1:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["gradle", "run"]
