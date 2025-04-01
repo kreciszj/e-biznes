@@ -11,7 +11,7 @@ Zadanie 2
 
 3.0 Należy stworzyć kontroler do Produktów
 3.5 Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane
-pobierane z listy /DOPOWIEDZIAŁ: (read, readdall, create, update, delete)/
+pobierane z listy
 4.0 Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy
 zgodnie z CRUD
 4.5 Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać
