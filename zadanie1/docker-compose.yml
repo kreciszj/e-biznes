@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   zadanie1:
     container_name: zadanie1
