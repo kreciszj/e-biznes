@@ -2,32 +2,34 @@
 
 **Zadanie 1** Docker
 
-:white_check_mark: 3.0 wymaganie 1 [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
+:white_check_mark: 3.0 | Obraz ubuntu z Pythonem w wersji 3.10 [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
 
-:white_check_mark: 3.5 wymaganie 2 [Link do commita2 ](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
+:white_check_mark: 3.5 | Obraz ubuntu:24.04 z Javą w wersji 8 oraz Kotlinem [Link do commita2 ](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
 
-:white_check_mark: 4.0 wymaganie 3 [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
+:white_check_mark: 4.0 | Do powyższego należy dodać najnowszego Gradle’a oraz paczkę JDBC SQLite w ramach projektu na Gradle (build.gradle) [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
 
-:white_check_mark: 4.5 wymaganie 4 [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
+:white_check_mark: 4.5 | Stworzyć przykład typu HelloWorld oraz uruchomienie aplikacji przez CMD oraz gradle [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
 
-:white_check_mark: 5.0 wymaganie 5 [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
+:white_check_mark: 5.0 Dodać konfigurację docker-compose [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
 
 Kod: [Zadanie1](./zadanie1/)
+Demo: [zadanie1_eb_demo.zip](./demos/zadanie1_eb_demo.zip)
 
-**Zadanie 2** 
+**Zadanie 2**
 
-:x: 3.0 wymaganie 1 [Link do commita 1]()
+:white_check_mark: 3.0 | Należy stworzyć kontroler do Produktów [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/b9666627df8fb85c1ec1cc029a17b26401bdba51)
 
-:x: 3.5 wymaganie 2 [Link do commita2 ]()
+:white_check_mark: 3.5 | Do kontrolera należy stworzyć endpointy zgodnie z CRUD - dane pobierane z listy [Link do commita2 ](https://github.com/kreciszj/e-biznes/commit/92e7b874d69bfc25d7c9584c46f303acad1477a8)
 
-:x: 4.0 wymaganie 3 [Link do commita 3]()
+:white_check_mark: 4.0 | Należy stworzyć kontrolery do Kategorii oraz Koszyka + endpointy zgodnie z CRUD [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/a3e87f6ba4765a8f2662831c71cce3bb97b9e142)
 
-:x: 4.5 wymaganie 4 [Link do commita 4]()
+:x: 4.5 | Należy aplikację uruchomić na dockerze (stworzyć obraz) oraz dodać skrypt uruchamiający aplikację via ngrok [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/)
 
-:x: 5.0 wymaganie 5 [Link do commita 5]()
-
+:x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/)
 
 Kod: [Zadanie2](./zadanie2/)
+Demo: [zadanie2_eb_demo.zip](./demos/zadanie2_eb_demo.zip)
+
 
 **Zadanie 3** 
 
