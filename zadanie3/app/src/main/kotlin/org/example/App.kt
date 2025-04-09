@@ -15,7 +15,14 @@ import dev.kord.gateway.PrivilegedIntent
 
 fun main() = runBlocking {
     val channelId = "1359597704472301592"
-    val categories = listOf("Electronics", "Books", "Clothing", "Games", "Groceries")
+    val categories = listOf("Electronics", "Movies", "Clothing", "Games", "Groceries")
+        val productsMap = mapOf(
+        "Electronics" to listOf("Smartphone", "Laptop", "Camera"),
+        "Movies" to listOf("1917", "Interstellar", "Oppenheimer"),
+        "Clothing" to listOf("T-shirt", "Jeans", "Jacket"),
+        "Games" to listOf("Chess", "Monopoly", "Scrabble"),
+        "Groceries" to listOf("Milk", "Bread", "Eggs")
+    )
 
     println("Hello World from Kotlin!")
 
@@ -42,10 +49,29 @@ fun main() = runBlocking {
 
             content.contains("!categories") -> {
                 val formatted = categories.joinToString(separator = "\n") { "- $it" }
-
                 message.channel.createEmbed {
                     title = "Available Categories"
                     description = formatted
+                }
+            }
+
+            content.startsWith("!products", ignoreCase = true) -> {
+                // Expected format "!products <category>"
+                val parts = content.split(" ", limit = 2)
+                if (parts.size < 2) {
+                    message.channel.createMessage("Please specify a category. Usage: !products <category>")
+                } else {
+                    val requestedCategory = parts[1].trim().replaceFirstChar { it.uppercase() }
+                    if (!productsMap.containsKey(requestedCategory)) {
+                        message.channel.createMessage("Sorry, I don't recognize the category: $requestedCategory. Use !categories to see available categories.")
+                    } else {
+                        val productList = productsMap[requestedCategory]!!
+                        val formattedProducts = productList.joinToString(separator = "\n") { "- $it" }
+                        message.channel.createEmbed {
+                            title = "Products in $requestedCategory"
+                            description = formattedProducts
+                        }
+                    }
                 }
             }
 
