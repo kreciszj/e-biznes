@@ -12,7 +12,7 @@
 
 :white_check_mark: 5.0 Dodać konfigurację docker-compose [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/6f28b05109c240d68d841c38e0db4ea354f14379)
 
-Kod: [Zadanie1](./zadanie1/)
+Kod: [Zadanie1](./zadanie1/) <br>
 Demo: [zadanie1_eb_demo.zip](./demos/zadanie1_eb_demo.zip)
 
 **Zadanie 2**
@@ -27,24 +27,24 @@ Demo: [zadanie1_eb_demo.zip](./demos/zadanie1_eb_demo.zip)
 
 :x: 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/)
 
-Kod: [Zadanie2](./zadanie2/)
+Kod: [Zadanie2](./zadanie2/) <br>
 Demo: [zadanie2_eb_demo.zip](./demos/zadanie2_eb_demo.zip)
 
 
 **Zadanie 3** 
 
-:x: 3.0 wymaganie 1 [Link do commita 1]()
+:white_check_mark: 3.0 | Należy stworzyć aplikację kliencką w Kotlinie we frameworku która pozwala na przesyłanie wiadomości na platformę Discord [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/44589ed7082d403b919dbf00e28707bd95c2d8bc)
 
-:x: 3.5 wymaganie 2 [Link do commita2 ]()
+:white_check_mark: 3.5 | Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji (bota) [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/e3fa6453d20f65548f37be58394d20f16962d52d)
 
-:x: 4.0 wymaganie 3 [Link do commita 3]()
+:white_check_mark: 4.0 | Zwróci listę kategorii na określone żądanie użytkownika [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/cf3a26b1cf12bed8cf523461aa519ea35b96a8c2)
 
-:x: 4.5 wymaganie 4 [Link do commita 4]()
+:white_check_mark: 4.5 | Zwróci listę produktów wg żądanej kategorii [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/5462b4c5aa50a3c7c74b8da01407a6e2af3ef061)
 
-:x: 5.0 wymaganie 5 [Link do commita 5]()
+:x: 5.0 | Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex [Link do commita 5]()
 
-Kod: [Zadanie3](./zadanie3/)
-
+Kod: [Zadanie3](./zadanie3/) <br>
+Demo: [zadanie3_eb_demo.zip](./demos/zadanie3_eb_demo.zip)
 
 **Zadanie 4** 
 
@@ -58,8 +58,8 @@ Kod: [Zadanie3](./zadanie3/)
 
 :x: 5.0 wymaganie 5 [Link do commita 5]()
 
-Kod: [Zadanie4](./zadanie4/)
-
+Kod: [Zadanie4](./zadanie4/) <br>
+Demo: [zadanie4_eb_demo.zip](./demos/zadanie4_eb_demo.zip)
 
 **Zadanie 5** 
 
@@ -73,4 +73,5 @@ Kod: [Zadanie4](./zadanie4/)
 
 :x: 5.0 wymaganie 5 [Link do commita 5]()
 
-Kod: [Zadanie5](./zadanie5/)
+Kod: [Zadanie5](./zadanie5/) <br>
+Demo: [zadanie5_eb_demo.zip](./demos/zadanie5_eb_demo.zip)
