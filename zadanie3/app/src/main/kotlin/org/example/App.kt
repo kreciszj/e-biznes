@@ -8,9 +8,15 @@ import dev.kord.core.entity.channel.MessageChannel
 import dev.kord.core.event.message.MessageCreateEvent
 import dev.kord.core.on
 import kotlinx.coroutines.runBlocking
+import dev.kord.gateway.Intent
+import dev.kord.gateway.Intents
+import dev.kord.gateway.PrivilegedIntent
+
 
 fun main() = runBlocking {
     val channelId = "1359597704472301592"
+    val categories = listOf("Electronics", "Books", "Clothing", "Games", "Groceries")
+
     println("Hello World from Kotlin!")
 
     // Get token
@@ -21,22 +27,36 @@ fun main() = runBlocking {
     println("Logged in as: ${client.getSelf().username}")
 
     val channel = client.getChannel(Snowflake(channelId.toULong())) as? MessageChannel
-    channel?.createMessage("Hello World!")
-    println("Messages sent to channel $channelId")
+    channel?.createMessage("Hello Discord!")
+    println("Message: 'Hello Discord!' sent to channel $channelId")
 
     client.on<MessageCreateEvent> {
-        val isMentioned = message.mentionedUserIds.contains(client.selfId)
-        val content = message.content.trim()
+        if (message.author?.isBot == true) return@on
+        println("Message received from ${message.author?.tag} '${message.content}'")
 
-        if (isMentioned) {
-            if (content.contains("!ping", ignoreCase = true)) {
+        val content = message.content.trim()
+        when {
+            content == "!ping" -> {
                 message.channel.createMessage("pong!")
             }
-            else {
-                message.channel.createMessage("Hello! I see you mentioned me, ${message.author?.username}**.")
+
+            content.contains("!categories") -> {
+                val formatted = categories.joinToString(separator = "\n") { "- $it" }
+
+                message.channel.createEmbed {
+                    title = "Available Categories"
+                    description = formatted
+                }
+            }
+
+            message.mentionedUserIds.contains(client.selfId) -> {
+                message.channel.createMessage("Hello! I see you mentioned me, **${message.author?.username}**. What can I do for you?")
             }
         }
     }
 
-    client.login()
+    client.login {
+        @OptIn(PrivilegedIntent::class)
+        intents += Intent.MessageContent
+    }
 }
