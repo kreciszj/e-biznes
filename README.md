@@ -48,15 +48,15 @@ Demo: [zadanie3_eb_demo.zip](./demos/zadanie3_eb_demo.zip)
 
 **Zadanie 4** 
 
-:x: 3.0 wymaganie 1 [Link do commita 1]()
+:white_check_mark: 3.0 | Należy stworzyć aplikację we frameworki echo w j. Go, która będzie miała kontroler Produktów zgodny z CRUD [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/1b57dadf3aed8c9705f7d7b62947af263b8db016)
 
-:x: 3.5 wymaganie 2 [Link do commita2 ]()
+:white_check_mark: 3.5 | Należy stworzyć model Produktów wykorzystując gorm oraz wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast listy) [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/26b8b285e3610e184ca5a9cb141d2d4ba38fbc19)
 
-:x: 4.0 wymaganie 3 [Link do commita 3]()
+:white_check_mark: 4.0 | Należy dodać model Koszyka oraz dodać odpowiedni endpoint [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/9ef863bf0a29205492239c64cafc92c2dbc3ff78)
 
-:x: 4.5 wymaganie 4 [Link do commita 4]()
+:white_check_mark: 4.5 | Należy stworzyć model kategorii i dodać relację między kategorią, a produktem [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/67f57be554885eb134d812180eec6c87f6735cad)
 
-:x: 5.0 wymaganie 5 [Link do commita 5]()
+:x: 5.0 | Pogrupować zapytania w gorm’owe scope'y [Link do commita 5]()
 
 Kod: [Zadanie4](./zadanie4/) <br>
 Demo: [zadanie4_eb_demo.zip](./demos/zadanie4_eb_demo.zip)
