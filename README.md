@@ -61,17 +61,17 @@ Demo: [zadanie3_eb_demo.zip](./demos/zadanie3_eb_demo.zip)
 Kod: [Zadanie4](./zadanie4/) <br>
 Demo: [zadanie4_eb_demo.zip](./demos/zadanie4_eb_demo.zip)
 
-**Zadanie 5** 
+**Zadanie 5** Frontend
 
-:x: 3.0 wymaganie 1 [Link do commita 1]()
+:white_check_mark: 3.0 | W ramach projektu należy stworzyć dwa komponenty: Produkty oraz Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w Produktach powinniśmy pobierać dane o produktach z aplikacji serwerowej [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/5fb66928854237596374af0c1f93dc2a3b18daa8)
 
-:x: 3.5 wymaganie 2 [Link do commita2 ]()
+:white_check_mark: 3.5 | Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/ce24711845eac1ac97bc160e756fde847cb88ca2)
 
-:x: 4.0 wymaganie 3 [Link do commita 3]()
+:white_check_mark: 4.0 | Dane pomiędzy wszystkimi komponentami powinny być przesyłane za pomocą React hooks [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/0b4934feee67f16030ed172a5644d31cbfd96095)
 
-:x: 4.5 wymaganie 4 [Link do commita 4]()
+:white_check_mark: 4.5 | NNależy dodać skrypt uruchamiający aplikację serwerową oraz kliencką na dockerze via docker-compose [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/e5c9428f262ad0909d824f92eaecff74807356da)
 
-:x: 5.0 wymaganie 5 [Link do commita 5]()
+:white_check_mark: 5.0 | Należy wykorzystać axios’a oraz dodać nagłówki pod CORS [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/d7dbfc5ac27b78618b9cb4bcf4a60d2b3d32168e)
 
 Kod: [Zadanie5](./zadanie5/) <br>
 Demo: [zadanie5_eb_demo.zip](./demos/zadanie5_eb_demo.zip)
