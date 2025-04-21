@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useCart } from "../hooks/CartContext";
+import { api } from "../api";
 
 export function Payment() {
   const { items, clear } = useCart();
@@ -7,10 +8,9 @@ export function Payment() {
   const total = items.reduce((s, i) => s + i.price, 0);
 
   async function pay() {
-    await fetch("/api/payments", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ productId: items.map(i => i.id), method }),
+    await api.post("/payments", {
+      productId: items.map(i => i.id),
+      method,
     });
     clear();
     alert("Payment sent");

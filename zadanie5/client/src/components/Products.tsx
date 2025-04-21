@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { useCart, CartItem } from "../hooks/CartContext";
+import { api } from "../api";
 
 export function Products() {
-  const [data, setData] = useState<CartItem[]>([]);
-  const { add } = useCart();
-
-  useEffect(() => {
-    fetch("/api/products").then(r => r.json()).then(setData);
-  }, []);
-
+    const [data, setData] = useState<CartItem[]>([]);
+    const { add } = useCart();
+  
+    useEffect(() => {
+      api.get<CartItem[]>("/products").then(r => setData(r.data));
+    }, []);
+  
   return (
     <div>
       <h2>Products</h2>
