@@ -1,19 +1,19 @@
-import { CartItem } from "../hooks/useCart";
 import { useState } from "react";
+import { useCart } from "../hooks/CartContext";
 
-export function Payment({ items }: { items: CartItem[] }) {
+export function Payment() {
+  const { items, clear } = useCart();
   const [method, setMethod] = useState("card");
-  const total = items.reduce((sum, i) => sum + i.price, 0);
+  const total = items.reduce((s, i) => s + i.price, 0);
 
-  function pay() {
-    fetch("/api/payments", {
+  async function pay() {
+    await fetch("/api/payments", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        productId: items.map(i => i.id),
-        method,
-      }),
-    }).then(() => alert("Payment sent"));
+      body: JSON.stringify({ productId: items.map(i => i.id), method }),
+    });
+    clear();
+    alert("Payment sent");
   }
 
   return (

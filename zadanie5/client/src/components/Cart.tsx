@@ -1,14 +1,13 @@
-import { CartItem } from "../hooks/useCart";
+import { useCart } from "../hooks/CartContext";
 
-export function Cart({ items }: { items: CartItem[] }) {
+export function Cart() {
+  const { items } = useCart();
   const total = items.reduce((s, i) => s + i.price, 0);
 
   return (
     <div>
       <h2>Cart</h2>
-      {items.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
+      {items.length ? (
         <ul>
           {items.map((i, idx) => (
             <li key={idx}>
@@ -16,6 +15,8 @@ export function Cart({ items }: { items: CartItem[] }) {
             </li>
           ))}
         </ul>
+      ) : (
+        <p>Your cart is empty.</p>
       )}
       <p>Total: {total} zł</p>
     </div>

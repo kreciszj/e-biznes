@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
-import { CartItem } from "../hooks/useCart";
+import { useCart, CartItem } from "../hooks/CartContext";
 
-export function Products({ onAdd }: { onAdd: (p: CartItem) => void }) {
+export function Products() {
   const [data, setData] = useState<CartItem[]>([]);
+  const { add } = useCart();
 
   useEffect(() => {
-    fetch("/api/products")
-      .then(r => r.json())
-      .then(setData);
+    fetch("/api/products").then(r => r.json()).then(setData);
   }, []);
 
   return (
@@ -17,7 +16,7 @@ export function Products({ onAdd }: { onAdd: (p: CartItem) => void }) {
         {data.map(p => (
           <li key={p.id}>
             {p.name} – {p.price} zł{" "}
-            <button onClick={() => onAdd(p)}>Add</button>
+            <button onClick={() => add(p)}>Add</button>
           </li>
         ))}
       </ul>

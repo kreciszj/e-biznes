@@ -14,8 +14,8 @@ type product struct {
 }
 
 type payment struct {
-	ProductID int    `json:"productId"`
-	Method    string `json:"method"`
+	ProductIDs []int  `json:"productId"`
+	Method     string `json:"method"`
 }
 
 var products = []product{
@@ -27,18 +27,28 @@ var products = []product{
 func main() {
 	e := echo.New()
 
+	e.Use(func(next echo.HandlerFunc) echo.HandlerFunc {
+		return func(c echo.Context) error {
+			log.Printf("Incoming request: %s %s", c.Request().Method, c.Request().URL.Path)
+			return next(c)
+		}
+	})
+
 	e.GET("/products", func(c echo.Context) error {
+		log.Println("Sending products:", products)
 		return c.JSONPretty(http.StatusOK, products, "  ")
 	})
 
 	e.POST("/payments", func(c echo.Context) error {
 		var p payment
 		if err := c.Bind(&p); err != nil {
+			log.Println("Invalid payment payload")
 			return c.NoContent(http.StatusBadRequest)
 		}
-		log.Println("payment received:", p)
+		log.Printf("Payment received: %v via %s", p.ProductIDs, p.Method)
 		return c.NoContent(http.StatusCreated)
-	})
+	})	
 
+	log.Println("Server running on http://localhost:8081")
 	e.Logger.Fatal(e.Start(":8081"))
 }
