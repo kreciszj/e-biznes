@@ -15,7 +15,7 @@
 Kod: [Zadanie1](./zadanie1/) <br>
 Demo: [zadanie1_eb_demo.zip](./demos/zadanie1_eb_demo.zip)
 
-**Zadanie 2**
+**Zadanie 2** Scala
 
 :white_check_mark: 3.0 | Należy stworzyć kontroler do Produktów [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/b9666627df8fb85c1ec1cc029a17b26401bdba51)
 
@@ -31,7 +31,7 @@ Kod: [Zadanie2](./zadanie2/) <br>
 Demo: [zadanie2_eb_demo.zip](./demos/zadanie2_eb_demo.zip)
 
 
-**Zadanie 3** 
+**Zadanie 3** Kotlin
 
 :white_check_mark: 3.0 | Należy stworzyć aplikację kliencką w Kotlinie we frameworku która pozwala na przesyłanie wiadomości na platformę Discord [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/44589ed7082d403b919dbf00e28707bd95c2d8bc)
 
@@ -46,7 +46,7 @@ Demo: [zadanie2_eb_demo.zip](./demos/zadanie2_eb_demo.zip)
 Kod: [Zadanie3](./zadanie3/) <br>
 Demo: [zadanie3_eb_demo.zip](./demos/zadanie3_eb_demo.zip)
 
-**Zadanie 4** 
+**Zadanie 4** Go
 
 :white_check_mark: 3.0 | Należy stworzyć aplikację we frameworki echo w j. Go, która będzie miała kontroler Produktów zgodny z CRUD [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/1b57dadf3aed8c9705f7d7b62947af263b8db016)
 
