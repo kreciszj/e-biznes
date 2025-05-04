@@ -78,30 +78,45 @@ Demo: [zadanie5_eb_demo.zip](./demos/zadanie5_eb_demo.zip)
 
 
 **Zadanie 6** Testy
+
 :white_check_mark: 3.0 | Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium (Kotlin, Python, Java, JS, Go, Scala) [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/69cd5530f741080ef0e7f1f578f9e679c933ed0f)
+
 :x: 3.5 | Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50 asercji [Link do commita 2]()
+
 :x: 4.0 | Należy stworzyć testy jednostkowe do wybranego wcześniejszegoprojektu z minimum 50 asercjami [Link do commita 3]()
+
 :x: 4.5 | Należy dodać testy API, należy pokryć wszystkie endpointy zminimum jednym scenariuszem negatywnym per endpoint [Link do commita 4]()
+
 :x: 5.0 | Należy uruchomić testy funkcjonalne na Browserstacku [Link do commita 5]()
 
 Kod: [Zadanie6](./zadanie6/) <br>
 Demo: [zadanie6_eb_demo.zip](./demos/zadanie6_eb_demo.zip)
 
 **Zadanie 7** Sonar
+
 :white_check_mark: 3.0 | Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w hookach gita [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/875a820338fe96fcb3a0456b985b22c2faac4212)
+
 :x: 3.5 | Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod aplikacji serwerowej) [Link do commita 2]()
+
 :x: 4.0 | Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kodaplikacji serwerowej) [Link do commita 3]()
+
 :x: 4.5 | Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwaw kodzie w Sonarze (kod aplikacji serwerowej) [Link do commita 4]()
+
 :x: 5.0 | Należy wyeliminować wszystkie błędy oraz zapaszki w kodzieaplikacji klienckiej [Link do commita 5]()
 
 Kod: [Zadanie7](./zadanie7/) <br>
 Demo: [zadanie7_eb_demo.zip](./demos/zadanie7_eb_demo.zip)
 
 **Zadanie 8** 
+
 :white_check_mark: 3.0 | logowanie przez aplikację serwerową (bez Oauth2) [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/967cedea6773a71aca3991e5e6417af0ae4c1acf)
+
 :x: 3.5 | rejestracja przez aplikację serwerową (bez Oauth2) [Link do commita 2]()
+
 :x: 4.0 | logowanie via Google OAuth2 [Link do commita 3]()
+
 :x: 4.5 | logowanie via Facebook lub Github OAuth2 [Link do commita 4]()
+
 :x: 5.0 | zapisywanie danych logowania OAuth2 po stronie serwera [Link do commita 5]()
 
 Kod: [Zadanie8](./zadanie8/) <br>
