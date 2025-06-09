@@ -58,21 +58,32 @@ async def chat(req: ChatRequest):
         "odpowiedz dokładnie 'REJECT'."
         "Jeśli temat pasuje, odpowiedz normalnie."
     )
-    payload = {
+    answer_msg = call_llm({
         "model": MODEL,
         "temperature": 0.7,
         "messages": [
             {"role": "system", "content": prompt},
             {"role": "user",   "content": req.message}
         ]
-    }
-
-    ans = call_llm(payload)
-    if ans is None:
+    })
+    if answer_msg is None:
         return {"error": "Nie można uzyskać odpowiedzi od modelu."}
 
-    content = ans["content"].strip()
+    content = answer_msg["content"].strip()
     if content.startswith("REJECT"):
         return {"response": "Możemy rozmawiać wyłącznie o kwestiach związanych z linią lotniczą LOT"}
+
+    sent_msg = call_llm({
+        "model": MODEL,
+        "temperature": 0,
+        "max_tokens": 8,
+        "messages": [
+            {"role": "system", "content": "Oceń sentyment tekstu jako 'pozytywny', 'neutralny' lub 'negatywny'. "
+                                          "Zwróć jedno słowo."},
+            {"role": "user",   "content": content}
+        ]
+    })
+    if sent_msg and sent_msg["content"].strip().lower().startswith("negatyw"):
+        return {"response": "Odpowiedź została odrzucona ze względu na negatywny wydźwięk."}
 
     return {"response": content}
