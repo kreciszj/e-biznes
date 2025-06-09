@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Zadanie 9</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;max-width:600px;margin:40px auto}
+h1{text-align:center;margin-bottom:20px}
+#chatbox{border:1px solid #ccc;padding:10px;height:400px;overflow-y:auto;margin-bottom:10px}
+.user{font-weight:bold}
+.bot{color:#1a73e8}
+</style>
+</head>
+<body>
+<h1>Llama-3.3-70B-Instruct-Turbo-Free</h1>
+<div id="chatbox"></div>
+<form id="form">
+  <input id="msg" style="width:80%" autocomplete="off">
+  <button>Send</button>
+</form>
+
+<script>
+const box=document.getElementById("chatbox");
+
+document.getElementById("form").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const m=document.getElementById("msg").value.trim();
+  if(!m)return;
+
+  box.innerHTML+=`<div class="user">${m}</div>`;
+  document.getElementById("msg").value="";
+
+  const r=await fetch("http://localhost:8000/chat",{
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify({message:m})
+  });
+  const d=await r.json();
+  box.innerHTML+=`<div class="bot">${d.response||"Error!"}</div>`;
+  box.scrollTop=box.scrollHeight;
+});
+</script>
+</body>
+</html>
