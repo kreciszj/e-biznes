@@ -11,6 +11,14 @@ export default function App() {
     }
   }, [messages]);
 
+  useEffect(() => {
+    fetch("http://localhost:8000/start")
+      .then((res) => res.json())
+      .then((data) => {
+        setMessages([{ role: "bot", content: data.message }]);
+      });
+  }, []);
+
   const send = async () => {
     const text = input.trim();
     if (!text) return;
@@ -32,6 +40,12 @@ export default function App() {
     } catch {
       setMessages((msgs) => [...msgs.slice(0, -1), { role: "bot", content: "Błąd połączenia" }]);
     }
+  };
+
+  const endConversation = async () => {
+    const r = await fetch("http://localhost:8000/end");
+    const d = await r.json();
+    setMessages((msgs) => [...msgs, { role: "bot", content: d.message }]);
   };
 
   return (
@@ -75,6 +89,12 @@ export default function App() {
             onClick={send}
           >
             Wyślij
+          </button>
+          <button
+            className="px-4 py-1 bg-gray-300 text-black rounded-md"
+            onClick={endConversation}
+          >
+            Zakończ
           </button>
         </div>
       </div>
