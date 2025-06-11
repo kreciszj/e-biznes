@@ -121,3 +121,33 @@ Demo: [zadanie7_eb_demo.zip](./demos/zadanie7_eb_demo.zip)
 
 Kod: [Zadanie8](./zadanie8/) <br>
 Demo: [zadanie8_eb_demo.zip](./demos/zadanie8_eb_demo.zip)
+
+**Zadanie 9** 
+
+:white_check_mark: 3.0 | należy stworzyć po stronie serwerowej osobny serwis do łącznia z chatGPT do usługi chat [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/6c9ac41d429c054cea5ab723f563812c91cb36bb)
+
+:white_check_mark: 3.5 | należy stworzyć interfejs frontowy dla użytkownika, który komunikuje się z serwisem; odpowiedzi powinny być wysyałen do frontendowego interfejsu [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/025498e0101e68036436ca72bf15676d59f13914)
+
+:white_check_mark: 4.0 | stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/c472b552e2e143fba1b29d271c1731580882acc8)
+
+:white_check_mark: 4.5 | filtrowanie po zagadnieniach związanych ze sklepem (np. ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/aed93e7d50636203414537ece9edcd4cdb00af17)
+
+:white_check_mark: 5.0 | filtrowanie odpowiedzi po sentymencie [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/e3a2e12d47198d2a58f101ff0925fba08819cd38)
+
+Kod: [Zadanie9](./zadanie9/) <br>
+Demo: [zadanie9_eb_demo.zip](./demos/zadanie9_eb_demo.zip)
+
+**Zadanie 10** 
+
+:x: 3.0 | Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/6c9ac41d429c054cea5ab723f563812c91cb36bb)
+
+:x: 3.5 | Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar) [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/025498e0101e68036436ca72bf15676d59f13914)
+
+:x: 4.0 | Dodać notyfikację mailową o zbudowaniu aplikacji [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/c472b552e2e143fba1b29d271c1731580882acc8)
+
+:x: 4.5 | Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę [Link do commita 4](https://github.com/kreciszj/e-biznes/commit/aed93e7d50636203414537ece9edcd4cdb00af17)
+
+:x: 5.0 | Dodać uruchomienie regresyjnych testów automatycznych (funkcjonalnych) jako krok w Actions [Link do commita 5](https://github.com/kreciszj/e-biznes/commit/e3a2e12d47198d2a58f101ff0925fba08819cd38)
+
+Kod: [Zadanie10](./zadanie10/) <br>
+Demo: [zadanie10_eb_demo.zip](./demos/zadanie10_eb_demo.zip)
