@@ -1,7 +1,6 @@
 Link to Dockerhub
 ---
-https://hub.docker.com/repository/docker/kreciszj/zadanie1
-
+https://hub.docker.com/r/kreciszj/zadanie1
 
 Task Description
 ---
