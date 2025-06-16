@@ -141,7 +141,7 @@ Demo: [zadanie9_eb_demo.zip](./demos/zadanie9_eb_demo.zip)
 
 :white_check_mark: 3.0 | Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/a8e7395b33df2e2be0d5b2f6cbe5f1ec30c09f27) + [Frontend](https://todo-app-gl5e.onrender.com/) + [Backend](https://todo-app-backend-bs8g.onrender.com/api/tasks)
 
-:x: 3.5 | Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar) [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/025498e0101e68036436ca72bf15676d59f13914)
+:white_check_mark: 3.5 | Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar) [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/b757e2ddc7efe3dbe1921eb9dad2f1affadc6779)
 
 :x: 4.0 | Dodać notyfikację mailową o zbudowaniu aplikacji [Link do commita 3](https://github.com/kreciszj/e-biznes/commit/c472b552e2e143fba1b29d271c1731580882acc8)
 
