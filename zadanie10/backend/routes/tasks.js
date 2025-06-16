@@ -13,10 +13,17 @@ router.post('/', (req, res) => {
 });
 
 router.delete("/:id", (req, res) => {
-  const id = parseInt(req.params.id);
+  const id = req.params.id;
+  const initialLength = tasks.length;
   tasks = tasks.filter((task) => task.id !== id);
-  res.status(204).end(); 
+  
+  if (tasks.length === initialLength) {
+    return res.status(404).json({ error: "Task not found" });
+  }
+
+  res.status(204).end();
 });
+
 
 
 module.exports = router;
