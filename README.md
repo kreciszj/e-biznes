@@ -139,7 +139,7 @@ Demo: [zadanie9_eb_demo.zip](./demos/zadanie9_eb_demo.zip)
 
 **Zadanie 10** 
 
-:x: 3.0 | Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/6c9ac41d429c054cea5ab723f563812c91cb36bb)
+:white_check_mark: 3.0 | Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [Link do commita 1](https://github.com/kreciszj/e-biznes/commit/a8e7395b33df2e2be0d5b2f6cbe5f1ec30c09f27) + [Frontend](https://todo-app-gl5e.onrender.com/) + [Backend](https://todo-app-backend-bs8g.onrender.com/api/tasks)
 
 :x: 3.5 | Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar) [Link do commita 2](https://github.com/kreciszj/e-biznes/commit/025498e0101e68036436ca72bf15676d59f13914)
 
