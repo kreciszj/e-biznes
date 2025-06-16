@@ -15,7 +15,7 @@ export async function addTask(title) {
 }
 
 export async function deleteTask(id) {
-  const res = await fetch(`http://localhost:3000/api/tasks/${id}`, {
+  const res = await fetch(`${url}/api/tasks/${id}`, {
     method: "DELETE",
   });
   if (!res.ok) {
